@@ -1,3 +1,6 @@
+
+source("~/GitHub/PHP-1560-Final-Project/Pipeline/clean_data.R")
+
 clean_dates <- function(raw_data) {
   
   clean_dates <- raw_data %>%
