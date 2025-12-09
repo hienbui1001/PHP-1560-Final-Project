@@ -1,3 +1,6 @@
+
+source("~/GitHub/PHP-1560-Final-Project/Pipeline/optimal_range.R")
+
 #here I write the function to present the visualizations of the code
 #loading in necessary plotting library
 library(ggplot2)
