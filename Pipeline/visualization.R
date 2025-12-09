@@ -35,7 +35,7 @@ day_graph <- function(optimal){
     labs(
       title = "Optimization Needed Based on Day of the Week",
       x = "Day",
-      y = "Optimization Count")
+      y = "Optimization Score")
   print(graph)
 }
 
