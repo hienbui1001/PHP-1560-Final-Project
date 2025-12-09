@@ -1,3 +1,17 @@
+#' Reachable Stops
+#' 
+#' @description This function is meant to find all of the stops that a RIPTA 
+#' rider can reach from their inputted origin information
+#' @param1 clean_dates a data frame that with Trip, Route, Stop Number, 
+#' and POSIXct Date_Time
+#' @param2 start_stop a value that is the stop that the rider will start from
+#' @param3 start_time a POSIXct formatted value that is the date and time that
+#' the rider will start at
+#' @param4 max_minutes a positive value that is the maximum amount of time a 
+#' rider will take to get to a stop
+#' @return This function returns a data frame that has Trip,Stop Number
+#' Date_Time, and mins (time it takes to get to that stop)
+
 source("~/GitHub/PHP-1560-Final-Project/Connectivity Pipeline/clean_dates.R")
 
 reachable_stops <- function(clean_dates, start_stop, start_time, max_minutes = 30) {
