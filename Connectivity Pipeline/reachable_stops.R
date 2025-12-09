@@ -1,4 +1,4 @@
-source("~/GitHub/PHP-1560-Final-Project/clean_dates.R")
+source("~/GitHub/PHP-1560-Final-Project/Connectivity Pipeline/clean_dates.R")
 
 reachable_stops <- function(clean_dates, start_stop, start_time, max_minutes = 30) {
   
