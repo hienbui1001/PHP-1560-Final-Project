@@ -1,7 +1,3 @@
-
-
-source("~/GitHub/PHP-1560-Final-Project/Pipeline/metrics.R")
-
 simulate_transfers <- function(prop_table, n = 1000, size = 200) {
   
   # Empty vectors

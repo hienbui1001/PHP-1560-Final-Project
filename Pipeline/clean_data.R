@@ -1,8 +1,7 @@
 library(tidyverse)
 library(lubridate)
 
-
-raw_data <- read.csv("ridership_simulated.csv")
+raw_data <- read.csv("[insert ripta data here]")
 
 clean_data <- function(raw_data){
   raw_data %>%
