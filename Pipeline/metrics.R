@@ -1,7 +1,3 @@
-
-
-source("~/GitHub/PHP-1560-Final-Project/Pipeline/clean_data.R")
-
 #This script builds functions in order to find metrics for the cleaned Data
 library(dplyr)
 

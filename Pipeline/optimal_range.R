@@ -1,6 +1,3 @@
-
-source("~/GitHub/PHP-1560-Final-Project/Pipeline/simulate_transfers.R")
-
 #Optimal Range Function
 optimal_range <- function(sim_data) {
   

@@ -1,6 +1,3 @@
-
-source("~/GitHub/PHP-1560-Final-Project/Pipeline/optimal_range.R")
-
 #here I write the function to present the visualizations of the code
 #loading in necessary plotting library
 library(ggplot2)
@@ -65,7 +62,7 @@ route_graphs <- function(optimal){
                    y = optimize_count),
              color = "darkgreen",
              fill = "lightgreen") +
-    labs(title = "Stations in Need more Direct Routes",
+    labs(title = "Stations in Need of More Direct Routes",
          x = "Routes",
          y = "Optimization Score")
   
