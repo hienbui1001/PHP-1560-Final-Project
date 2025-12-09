@@ -1,3 +1,15 @@
+#' Simulating Transfers
+#' 
+#' @description This function is meant to simulate the transfer rate for each
+#' route/day pair
+#' @param1 prop_table a data frame that contains the output of the metrics function
+#' @param2 n a positive integer that is the number of simulations we are 
+#' calculating for each day/route pair
+#' @param3 size a positive integer that is the number of trials we will use for 
+#' our binomial simulations
+#' @return This function returns a data frame with Trip, Route, Stop Number, 
+#' and POSIXct Date_Time
+
 simulate_transfers <- function(prop_table, n = 1000, size = 200) {
   
   # Empty vectors
