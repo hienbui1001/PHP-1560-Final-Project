@@ -4,6 +4,12 @@ library(ggplot2)
 
 #Day visualization function: This function will allow us to view what days might
 #struggle the most with optimization
+#' day graph
+#' 
+#' @description takes in optimized data and produces a visual to interpret
+#'
+#' @param optimal Dataframe, Optimized dataframe 
+#' @return graph that compares day versus optimization score
 day_graph <- function(optimal){
   
   #format the data for specific days
@@ -41,6 +47,12 @@ day_graph <- function(optimal){
 
 #Route visualization function: This function will allow us to view what routes
 #struggle across all days.
+#' Route graphs
+#' 
+#' @description takes in optimized data and creates visuals for interpretations
+#'
+#' @param optimal Dataframe, dataframe including optimized data 
+#' @return two graphs, one representing scores above zero the other representing below zero
 route_graphs <- function(optimal){
   
   #format the data for specific routes
@@ -82,6 +94,12 @@ print(conn)
 #Day paired with Route Visualization Function: This function will allow us to
 #view specifically what routes struggle on what days using a geom_tile. This will
 #only give us a general overview.
+#' dxr graph
+#' 
+#' @description Takes in optimal data and produces a general map of the data
+#'
+#' @param optimal, dataframe that includes optimized data 
+#' @return graph, a visualization that shows optimization scores based on both Day and Route
 dxr_graph <- function(optimal){
   
   #format data so that it can be made into heat map

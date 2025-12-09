@@ -1,6 +1,11 @@
 #This script builds functions in order to find metrics for the cleaned Data
 library(dplyr)
-
+#' Metric
+#' 
+#' @description produces a new table containing calculated proportions
+#'
+#' @param ripta_data Dataframe, cleaned RIPTA data from "clear_data.R"
+#' @return prop_table Dataframe, dataframe with transfer proportions attached
 metric <- function(ripta_data){
   #Focusing on week days an specific routes and summarizing for transfers
   prop_table <- ripta_data %>%

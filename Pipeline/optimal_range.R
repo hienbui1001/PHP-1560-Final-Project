@@ -1,4 +1,10 @@
 #Optimal Range Function
+#' Optimal range
+#' 
+#' @description This function registers a optimization score based on simulated data
+#'
+#' @param sim_data Dataframe, dataframe including simulated data based on metrics 
+#' @return optimal_range_df, dataframe that includes optimizations scores for the simulated data
 optimal_range <- function(sim_data) {
   
   #Find bounds for each day: This provides reasonable bounds to test route proportions against
