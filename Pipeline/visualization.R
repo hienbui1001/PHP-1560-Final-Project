@@ -61,14 +61,20 @@ route_graphs <- function(optimal){
     geom_col(aes(x = Route,
                    y = optimize_count),
              color = "darkgreen",
-             fill = "lightgreen")
+             fill = "lightgreen") +
+    labs(title = "Stations in Need more Direct Routes",
+         x = "Routes",
+         y = "Optimization Score")
   
   #plot stations that need better connections
   conn <- ggplot(not_connected)+
     geom_col(aes(x = Route,
                  y = optimize_count),
              color = "red",
-             fill = "pink")
+             fill = "pink") +
+    labs(title = "Stations in Need of Better Connections",
+         x = "Routes",
+         y = "Optimization Score")
 print(few)
 print(conn)
 }
@@ -93,6 +99,9 @@ dxr_graph <- function(optimal){
            geom_tile()+
            scale_fill_gradient2(low = "red",
                                 mid = "white",
-                                high = "blue")
+                                high = "blue") +
+    labs(title = "Day-Route Paired Optimization Map",
+         x = "Routes",
+         y = "Day of the Week")
   print(graph)
 }
