@@ -25,7 +25,7 @@ day_graph <- function(optimal){
       levels = c("Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun")))
   
   #plot this on a graph
-  ggplot(optimal_day,
+  graph <- ggplot(optimal_day,
          aes(x = Day.of.Week,
              y = optimize_count,
              group = 1)) +
@@ -35,7 +35,8 @@ day_graph <- function(optimal){
     labs(
       title = "Optimization Needed Based on Day of the Week",
       x = "Day",
-      y = "Optimization Count") 
+      y = "Optimization Count")
+  print(graph)
 }
 
 #Route visualization function: This function will allow us to view what routes
@@ -85,7 +86,7 @@ dxr_graph <- function(optimal){
            Route = factor(Route))
   
   #Plot the data
-  ggplot(dxr_table,
+  graph <- ggplot(dxr_table,
          aes(x = Route,
              y = Day.of.Week,
              fill = optimize_count)) +
@@ -93,18 +94,5 @@ dxr_graph <- function(optimal){
            scale_fill_gradient2(low = "red",
                                 mid = "white",
                                 high = "blue")
-  
+  print(graph)
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
